@@ -1,27 +1,53 @@
 {
+
   "name": "IoTClient",
+
   "version": "0.0.1",
+
   "description": "Node module for eLinux nano-computer to communicate with ItTHub.",
+
   "main": "iotClient.js",
+
   "scripts": {
+
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
+
   "repository": {
+
     "type": "git",
+
     "url": "https://github.com/VanKichline/IoTClient.git"
+
   },
+
   "keywords": [
+
     "IoT",
+
     "SignalR",
+
     "Node"
+
   ],
+
   "author": "Van Kichline",
+
   "license": "ISC",
+
   "bugs": {
+
     "url": "https://github.com/VanKichline/IoTClient/issues"
+
   },
+
   "homepage": "https://github.com/VanKichline/IoTClient",
+
   "dependencies": {
+
     "signalr-client": "0.0.16"
+
   }
+
 }
