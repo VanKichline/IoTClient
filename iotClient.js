@@ -1,6 +1,6 @@
 // For the BeagleBone Black Rev. C
 
-var b          = require('bonescript');
+//var b          = require('bonescript');
 var signalR    = require('signalr-client');
 var client     = new signalR.client("http://kichline-iothub.azurewebsites.net/signalR", ['IoTHub']);
 var clientName = "bb1.kichline.com";
@@ -17,11 +17,12 @@ client.handlers.iothub = {
 function uptimeResponse() {
     console.log("Sending initial message");
     client.invoke(
-        'ChatHub', // Hub Name (case insensitive)
-        uptimeResponse// Method Name (case insensitive)
+        'ChatHub',      // Hub Name (case insensitive)
+        uptimeResponse, // Method Name (case insensitive)
         clientName, 100 //additional parameters to match called signature
         );
 }
 
-setTimeoutuptimeResponse1000);
+setTimeout(uptimeResponse, 1000);
+
 
