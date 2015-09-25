@@ -1,6 +1,5 @@
-// For the BeagleBone Black Rev. C
+// For the BeagleBone Black Rev. C and Raspberry Pi 2 w/ AdaFruit Node install
 
-//var b          = require('bonescript');
 var signalR    = require('signalr-client');
 var client     = new signalR.client("http://kichline-iothub.azurewebsites.net/signalR", ['IoTHub']);
 var clientName = "bb1.kichline.com";
